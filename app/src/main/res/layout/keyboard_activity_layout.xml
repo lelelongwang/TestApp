@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="#e7b9b9"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/keyboard_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#383eda" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_1"
+                style="@style/MainButtonStyle"
+                android:hint="点击弹出键盘demo哦！" />
+
+            <EditText
+                android:id="@+id/edit_2"
+                style="@style/MainButtonStyle"
+                android:hint="点击一下，有惊喜（正常键盘）" />
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/MainButtonStyle"
+                android:text="默认字体  键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦" />
+
+            <TextView
+                android:id="@+id/text2"
+                style="@style/MainButtonStyle"
+                android:text="bold 字体   键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦键盘demo，哦哦哦哦哦"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text3"
+                style="@style/MainButtonStyle"
+                android:text="italic 字体  italic 字体 italic 字体 italic 字体 italic 字体 italic 字体 italic 字体italic 字体italic 字体italic 字体italic 字体italic 字体italic 字体italic 字体 italic 字体"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text4"
+                style="@style/MainButtonStyle"
+                android:text="normal 字体 normal 字体 normal 字体 normal 字体normal 字体normal 字体normal 字体normal 字体normal 字体normal 字体 normal 字体 normal 字体normal 字体normal 字体"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

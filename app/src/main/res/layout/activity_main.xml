@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_activity_toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#4b3bb3" />
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/MainButtonStyle"
+                android:text="弹出一个键盘吧！" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/MainButtonStyle"
+                android:text="即将进入toolbar demo界面"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_9"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_10"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_11"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_12"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_13"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_14"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+
+            <Button
+                android:id="@+id/btn_15"
+                style="@style/MainButtonStyle"
+                android:text="基本使用" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
