@@ -33,7 +33,7 @@
             <Button
                 android:id="@+id/btn_3"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="仿底层“复制粘贴弹框”" />
 
             <Button
                 android:id="@+id/btn_4"

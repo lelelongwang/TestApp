@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.testapp.ui.ActionModeDemoActivity;
 import com.example.testapp.ui.KeyboardDemoActivity;
 import com.example.testapp.ui.ToolbarDemoActivity;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button mButton1;
     private Button mButton2;
+    private Button mButton3;
     private Toolbar mToolbar;
 
     @Override
@@ -30,9 +32,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButton1 = findViewById(R.id.btn_1);
         mButton2 = findViewById(R.id.btn_2);
+        mButton3 = findViewById(R.id.btn_3);
 
         mButton1.setOnClickListener(this);
         mButton2.setOnClickListener(this);
+        mButton3.setOnClickListener(this);
     }
 
     @Override
@@ -43,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_2:
                 startToolbarDemo();
+                break;
+            case R.id.btn_3:
+                startActionModePopuWindow();
                 break;
             default:
                 break;
@@ -58,6 +65,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void startToolbarDemo() {
         Toast.makeText(this, "进入toolbar demo界面", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, ToolbarDemoActivity.class);
+        startActivity(intent);
+    }
+
+    private void startActionModePopuWindow(){
+        Toast.makeText(this,"进入仿“复制粘贴”界面",Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this,ActionModeDemoActivity.class);
         startActivity(intent);
     }
 }

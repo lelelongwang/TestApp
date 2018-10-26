@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_mode_menu_1"
+        android:title="menu_1" />
+    <item
+        android:id="@+id/action_mode_menu_2"
+        android:title="menu_2" />
+    <item
+        android:id="@+id/action_mode_menu_3"
+        android:title="menu_3" />
+    <item
+        android:id="@+id/action_mode_menu_4"
+        android:title="menu_4" />
+</menu>
