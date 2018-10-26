@@ -33,7 +33,8 @@
             <Button
                 android:id="@+id/btn_3"
                 style="@style/MainButtonStyle"
-                android:text="仿底层“复制粘贴弹框”" />
+                android:text="ActionMode demo 两大场景哟"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/btn_4"

@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void startActionModePopuWindow(){
-        Toast.makeText(this,"进入仿“复制粘贴”界面",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"进入仿ActionMode demo界面",Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this,ActionModeDemoActivity.class);
         startActivity(intent);
     }
