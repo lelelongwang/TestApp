@@ -27,74 +27,110 @@
             <Button
                 android:id="@+id/btn_2"
                 style="@style/MainButtonStyle"
-                android:text="即将进入toolbar demo界面"
-                android:textAllCaps="false" />
+                android:text="即将进入toolbar demo界面"/>
 
             <Button
                 android:id="@+id/btn_3"
                 style="@style/MainButtonStyle"
-                android:text="ActionMode demo 两大场景哟"
-                android:textAllCaps="false"/>
+                android:text="ActionMode demo 两大场景哟"/>
 
             <Button
                 android:id="@+id/btn_4"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="欢迎来到PopuWindow demo"/>
 
             <Button
                 android:id="@+id/btn_5"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="这里是Dialog demo"/>
 
             <Button
                 android:id="@+id/btn_6"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="动画demo"/>
 
             <Button
                 android:id="@+id/btn_7"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="item左滑删除"/>
 
             <Button
                 android:id="@+id/btn_8"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="自定义属性（attrs）、样式（style）、换肤、主题（theme）"/>
 
             <Button
                 android:id="@+id/btn_9"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="java 反射"/>
 
             <Button
                 android:id="@+id/btn_10"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="Handler机制"/>
 
             <Button
                 android:id="@+id/btn_11"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="Binder机制"/>
 
             <Button
                 android:id="@+id/btn_12"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="AIDL"/>
 
             <Button
                 android:id="@+id/btn_13"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="事件分发机制"/>
 
             <Button
                 android:id="@+id/btn_14"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="View的绘制流程"/>
 
             <Button
                 android:id="@+id/btn_15"
                 style="@style/MainButtonStyle"
-                android:text="基本使用" />
+                android:text="自定义View、ViewGroup"/>
+
+            <Button
+                android:id="@+id/btn_16"
+                style="@style/MainButtonStyle"
+                android:text="自定义LayoutManager"/>
+
+            <Button
+                android:id="@+id/btn_17"
+                style="@style/MainButtonStyle"
+                android:text="ListView"/>
+
+            <Button
+                android:id="@+id/btn_18"
+                style="@style/MainButtonStyle"
+                android:text="RecyclerView"/>
+
+            <Button
+                android:id="@+id/btn_19"
+                style="@style/MainButtonStyle"
+                android:text="ViewPager"/>
+            <Button
+                android:id="@+id/btn_20"
+                style="@style/MainButtonStyle"
+                android:text="WebView"/>
+            <Button
+                android:id="@+id/btn_21"
+                style="@style/MainButtonStyle"
+                android:text="SurfaceView"/>
+
+            <Button
+                android:id="@+id/btn_22"
+                style="@style/MainButtonStyle"
+                android:text="ActivityManagerService、PackageManagerService、ActivityMaagerService、View"/>
+
+            <Button
+                android:id="@+id/btn_23"
+                style="@style/MainButtonStyle"
+                android:text="实现一个Rxjava"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
