@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tool_bar_menu_1"
+        android:icon="@drawable/search_black_24dp"
+        android:title="toolbar_你"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/tool_bar_menu_2"
+        android:icon="@drawable/notifications_black_24dp"
+        android:title="toolbar_好"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/tool_bar_menu_3"
+        android:icon="@drawable/settings_black_24dp"
+        android:title="toolbar_吗"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tool_bar_menu_4"
+        android:title="toolbar_？"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -8,12 +8,32 @@
         android:id="@+id/keyboard_activity_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#383eda" />
+        android:background="#383eda"
+        app:popupTheme="@style/ToolbarPopupStyle">
+
+        <TextView
+            android:id="@+id/tool_bar_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="text"
+            android:textSize="22sp"
+            android:visibility="visible" />
+        <!--下面这个EditText是准备有时间做一个点击搜索menu，通过动画进入搜索toolbar-->
+        <EditText
+            android:id="@+id/tool_bar_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="搜索一下哦"
+            android:visibility="gone" />
+
+    </android.support.v7.widget.Toolbar>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="这里是toolbar demo界面"
+        android:text="这里是toolbar demo界面，下一步准备实现:\n 1、点击toolbar上的搜索menu，toolbar
+搜索界面，且有动画。\n 2、实现微信朋友圈里的上推动画"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

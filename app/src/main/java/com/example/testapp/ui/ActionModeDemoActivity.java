@@ -50,6 +50,7 @@ public class ActionModeDemoActivity extends AppCompatActivity implements View.On
 
     /**
      * 当menu弹框显示之后，点击空白处需要finsh弹框
+     *
      * @param event
      * @return
      */
@@ -88,9 +89,10 @@ public class ActionModeDemoActivity extends AppCompatActivity implements View.On
             mode.setTitle("title");
             mode.setSubtitle("subitle");
             mode.setTitleOptionalHint(true);
-            mode.getMenuInflater().inflate(R.menu.action_mode_menu, menu);
-            //不知可否不再xml中写menu，直接在代码中add呢？
-//            populateMenuWithItems(menu);
+            //通过xml生成menu
+            //mode.getMenuInflater().inflate(R.menu.action_mode_menu, menu);
+            //通过代码生成menu
+            populateMenuWithItems(menu);
             return true;
         }
 
@@ -103,16 +105,16 @@ public class ActionModeDemoActivity extends AppCompatActivity implements View.On
         public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.action_mode_menu_1:
-                    Toast.makeText(ActionModeDemoActivity.this,"你",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActionModeDemoActivity.this, "你", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.action_mode_menu_2:
-                    Toast.makeText(ActionModeDemoActivity.this,"好",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActionModeDemoActivity.this, "好", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.action_mode_menu_3:
-                    Toast.makeText(ActionModeDemoActivity.this,"吗",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActionModeDemoActivity.this, "吗", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.action_mode_menu_4:
-                    Toast.makeText(ActionModeDemoActivity.this,"？",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActionModeDemoActivity.this, "？", Toast.LENGTH_SHORT).show();
                     break;
                 default:
                     break;
