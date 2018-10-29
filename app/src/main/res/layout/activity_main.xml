@@ -125,7 +125,7 @@
             <Button
                 android:id="@+id/btn_22"
                 style="@style/MainButtonStyle"
-                android:text="ActivityManagerService、PackageManagerService、ActivityMaagerService、View"/>
+                android:text="WindowManagerService、PackageManagerService、ActivityManagerService、View"/>
 
             <Button
                 android:id="@+id/btn_23"

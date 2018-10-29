@@ -19,6 +19,7 @@
         <activity android:name=".ui.KeyboardDemoActivity" />
         <activity android:name=".ui.ToolbarDemoActivity" />
         <activity android:name=".ui.ActionModeDemoActivity" />
+        <activity android:name=".ui.SwipeLayoutDemoActivity" />
     </application>
 
 </manifest>

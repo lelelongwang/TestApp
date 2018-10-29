@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="#FFC6B28F"
+        android:gravity="center"
+        android:text="内容区域"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+</LinearLayout>
