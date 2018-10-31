@@ -131,6 +131,26 @@
                 android:id="@+id/btn_23"
                 style="@style/MainButtonStyle"
                 android:text="实现一个Rxjava"/>
+
+            <Button
+                android:id="@+id/btn_24"
+                style="@style/MainButtonStyle"
+                android:text="简单的MVP demo"/>
+
+            <Button
+                android:id="@+id/btn_25"
+                style="@style/MainButtonStyle"
+                android:text="收发短信验证码 demo"/>
+
+            <Button
+                android:id="@+id/btn_26"
+                style="@style/MainButtonStyle"
+                android:text="侧滑返回 demo"/>
+
+            <Button
+                android:id="@+id/btn_27"
+                style="@style/MainButtonStyle"
+                android:text="网络 demo"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
