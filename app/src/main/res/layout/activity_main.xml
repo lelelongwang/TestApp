@@ -75,7 +75,7 @@
                 android:text="Binder机制"/>
 
             <Button
-                android:id="@+id/btn_12"
+                android:id="@+id/aidl_btn"
                 style="@style/MainButtonStyle"
                 android:text="AIDL"/>
 

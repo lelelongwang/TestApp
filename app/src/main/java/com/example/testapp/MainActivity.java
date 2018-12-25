@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.testapp.ui.ActionModeDemoActivity;
+import com.example.testapp.ui.AidlDemoActivity;
 import com.example.testapp.ui.KeyboardDemoActivity;
 import com.example.testapp.ui.ToolbarDemoActivity;
 import com.example.testapp.ui.SwipeLayoutDemoActivity;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton2;
     private Button mButton3;
     private Button mButton7;
+    private Button mAidlBtn;
     private Toolbar mToolbar;
 
     @Override
@@ -36,11 +38,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButton2 = findViewById(R.id.btn_2);
         mButton3 = findViewById(R.id.btn_3);
         mButton7 = findViewById(R.id.btn_7);
+        mAidlBtn = findViewById(R.id.aidl_btn);
 
         mButton1.setOnClickListener(this);
         mButton2.setOnClickListener(this);
         mButton3.setOnClickListener(this);
         mButton7.setOnClickListener(this);
+        mAidlBtn.setOnClickListener(this);
     }
 
     @Override
@@ -57,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_7:
                 startSwipeLayoutDemo();
+                break;
+            case R.id.aidl_btn:
+                startAidlDemo();
                 break;
             default:
                 break;
@@ -76,14 +83,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void startActionModePopuWindow(){
-        Toast.makeText(this,"进入仿ActionMode demo界面",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"进入仿ActionMode demo界面",Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this,ActionModeDemoActivity.class);
         startActivity(intent);
     }
 
     private void startSwipeLayoutDemo() {
-        Toast.makeText(this, "进入滑动布局demo", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "进入滑动布局demo", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, SwipeLayoutDemoActivity.class);
+        startActivity(intent);
+    }
+
+    private void startAidlDemo(){
+        Toast.makeText(this, "进入aidl demo", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, AidlDemoActivity.class);
         startActivity(intent);
     }
 }
