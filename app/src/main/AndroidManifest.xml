@@ -20,7 +20,8 @@
         <activity android:name=".ui.ToolbarDemoActivity" />
         <activity android:name=".ui.ActionModeDemoActivity" />
         <activity android:name=".ui.SwipeLayoutDemoActivity" />
-        <activity android:name=".ui.AidlDemoActivity"></activity>
+        <activity android:name=".ui.AidlDemoActivity" />
+        <activity android:name=".ndkjnisoDemo.NdkJniSoDemoActivity"></activity>
     </application>
 
 </manifest>

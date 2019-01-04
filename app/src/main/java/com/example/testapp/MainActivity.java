@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.testapp.ndkjnisoDemo.NdkJniSoDemoActivity;
 import com.example.testapp.ui.ActionModeDemoActivity;
 import com.example.testapp.ui.AidlDemoActivity;
 import com.example.testapp.ui.KeyboardDemoActivity;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton3;
     private Button mButton7;
     private Button mAidlBtn;
+    private Button mJniBtn;
     private Toolbar mToolbar;
 
     @Override
@@ -39,12 +41,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButton3 = findViewById(R.id.btn_3);
         mButton7 = findViewById(R.id.btn_7);
         mAidlBtn = findViewById(R.id.aidl_btn);
+        mJniBtn = findViewById(R.id.jni_btn);
 
         mButton1.setOnClickListener(this);
         mButton2.setOnClickListener(this);
         mButton3.setOnClickListener(this);
         mButton7.setOnClickListener(this);
         mAidlBtn.setOnClickListener(this);
+        mJniBtn.setOnClickListener(this);
     }
 
     @Override
@@ -64,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.aidl_btn:
                 startAidlDemo();
+                break;
+            case R.id.jni_btn:
+                startJniDemo();
                 break;
             default:
                 break;
@@ -97,6 +104,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void startAidlDemo(){
         Toast.makeText(this, "进入aidl demo", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, AidlDemoActivity.class);
+        startActivity(intent);
+    }
+
+    private void startJniDemo(){
+        Toast.makeText(this, "进入jni demo", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, NdkJniSoDemoActivity.class);
         startActivity(intent);
     }
 }

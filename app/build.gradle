@@ -9,11 +9,23 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        把下面注释掉，竟然也能成功生成so文件
+//        externalNativeBuild {
+//            cmake {
+//                cppFlags ""
+//            }
+//        }
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('CMakeLists.txt')
         }
     }
 }

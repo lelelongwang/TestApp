@@ -78,6 +78,10 @@
                 android:id="@+id/aidl_btn"
                 style="@style/MainButtonStyle"
                 android:text="AIDL"/>
+            <Button
+                android:id="@+id/jni_btn"
+                style="@style/MainButtonStyle"
+                android:text="cmake调用jni生成so实现调用c语言 demo"/>
 
             <Button
                 android:id="@+id/btn_13"
