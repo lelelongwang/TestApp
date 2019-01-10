@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.testapp.AppWidgetDemo.AppWidgetDemoActivity;
 import com.example.testapp.ndkjnisoDemo.NdkJniSoDemoActivity;
 import com.example.testapp.ui.ActionModeDemoActivity;
 import com.example.testapp.ui.AidlDemoActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButton7;
     private Button mAidlBtn;
     private Button mJniBtn;
+    private Button mAppWidgetBtn;
     private Toolbar mToolbar;
 
     @Override
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButton7 = findViewById(R.id.btn_7);
         mAidlBtn = findViewById(R.id.aidl_btn);
         mJniBtn = findViewById(R.id.jni_btn);
+        mAppWidgetBtn = findViewById(R.id.appwidget_btn);
 
         mButton1.setOnClickListener(this);
         mButton2.setOnClickListener(this);
@@ -49,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButton7.setOnClickListener(this);
         mAidlBtn.setOnClickListener(this);
         mJniBtn.setOnClickListener(this);
+        mAppWidgetBtn.setOnClickListener(this);
     }
 
     @Override
@@ -71,6 +75,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.jni_btn:
                 startJniDemo();
+                break;
+            case R.id.appwidget_btn:
+                startAppWidgetDemo();
                 break;
             default:
                 break;
@@ -110,6 +117,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void startJniDemo(){
         Toast.makeText(this, "进入jni demo", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, NdkJniSoDemoActivity.class);
+        startActivity(intent);
+    }
+
+    private void startAppWidgetDemo(){
+        Toast.makeText(this, "进入AppWidget demo", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, AppWidgetDemoActivity.class);
         startActivity(intent);
     }
 }

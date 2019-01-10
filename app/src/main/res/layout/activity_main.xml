@@ -84,6 +84,11 @@
                 android:text="cmake调用jni生成so实现调用c语言 demo"/>
 
             <Button
+                android:id="@+id/appwidget_btn"
+                style="@style/MainButtonStyle"
+                android:text="AppWidget demo"/>
+
+            <Button
                 android:id="@+id/btn_13"
                 style="@style/MainButtonStyle"
                 android:text="事件分发机制"/>
