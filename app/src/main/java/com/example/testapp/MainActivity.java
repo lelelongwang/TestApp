@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.testapp.AppWidgetDemo.AppWidgetDemoActivity;
+import com.example.testapp.PreferencesDemo.PreferencesDemoActivity;
 import com.example.testapp.ndkjnisoDemo.NdkJniSoDemoActivity;
 import com.example.testapp.ui.ActionModeDemoActivity;
 import com.example.testapp.ui.AidlDemoActivity;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mAidlBtn;
     private Button mJniBtn;
     private Button mAppWidgetBtn;
+    private Button mPreferencesBtn;
     private Toolbar mToolbar;
 
     @Override
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAidlBtn = findViewById(R.id.aidl_btn);
         mJniBtn = findViewById(R.id.jni_btn);
         mAppWidgetBtn = findViewById(R.id.appwidget_btn);
+        mPreferencesBtn = findViewById(R.id.preferences_demo_btn);
 
         mButton1.setOnClickListener(this);
         mButton2.setOnClickListener(this);
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAidlBtn.setOnClickListener(this);
         mJniBtn.setOnClickListener(this);
         mAppWidgetBtn.setOnClickListener(this);
+        mPreferencesBtn.setOnClickListener(this);
     }
 
     @Override
@@ -78,6 +82,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.appwidget_btn:
                 startAppWidgetDemo();
+                break;
+            case R.id.preferences_demo_btn:
+                startPreferencesDemo();
                 break;
             default:
                 break;
@@ -123,6 +130,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void startAppWidgetDemo(){
         Toast.makeText(this, "进入AppWidget demo", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, AppWidgetDemoActivity.class);
+        startActivity(intent);
+    }
+
+    private void startPreferencesDemo(){
+        Toast.makeText(this, "进入Preferences demo", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, PreferencesDemoActivity.class);
         startActivity(intent);
     }
 }

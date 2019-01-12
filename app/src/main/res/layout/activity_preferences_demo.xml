@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PreferencesDemo.PreferencesDemoActivity">
+
+    <Button
+        android:id="@+id/appcompat_preferences_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="进入 AppCompatPreferenceActivity 设置"/>
+
+    <Button
+        android:id="@+id/preferences_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="进入 PreferenceActivity 设置"/>
+</LinearLayout>
