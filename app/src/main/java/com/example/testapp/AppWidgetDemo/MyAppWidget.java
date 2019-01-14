@@ -5,6 +5,7 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.widget.RemoteViews;
 
@@ -16,6 +17,13 @@ import com.example.testapp.R;
 public class MyAppWidget extends AppWidgetProvider {
 
     private static final String TAG = MyAppWidget.class.getSimpleName();
+
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        super.onReceive(context, intent);
+        Log.d(TAG, "onReceive: ljh context=" + context + "  intent=" + intent);
+    }
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
@@ -45,6 +53,18 @@ public class MyAppWidget extends AppWidgetProvider {
     }
 
     @Override
+    public void onAppWidgetOptionsChanged(Context context, AppWidgetManager appWidgetManager, int appWidgetId, Bundle newOptions) {
+        super.onAppWidgetOptionsChanged(context, appWidgetManager, appWidgetId, newOptions);
+        Log.d(TAG, "onAppWidgetOptionsChanged: ljh appWidgetId=" + appWidgetId + "  newOptions=" + newOptions);
+    }
+
+    @Override
+    public void onDeleted(Context context, int[] appWidgetIds) {
+        super.onDeleted(context, appWidgetIds);
+        Log.d(TAG, "onDeleted: ljh appWidgetIds=" + appWidgetIds);
+    }
+
+    @Override
     public void onEnabled(Context context) {
         Log.d(TAG, "onEnabled: ljh context=" + context);
         // Enter relevant functionality for when the first widget is created
@@ -54,6 +74,12 @@ public class MyAppWidget extends AppWidgetProvider {
     public void onDisabled(Context context) {
         Log.d(TAG, "onDisabled: ljh context=" + context);
         // Enter relevant functionality for when the last widget is disabled
+    }
+
+    @Override
+    public void onRestored(Context context, int[] oldWidgetIds, int[] newWidgetIds) {
+        super.onRestored(context, oldWidgetIds, newWidgetIds);
+        Log.d(TAG, "onRestored: ljh oldWidgetIds=" + oldWidgetIds + "  newWidgetIds=" + newWidgetIds);
     }
 }
 
